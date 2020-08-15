@@ -1,0 +1,28 @@
+body {
+    -webkit-animation: fadeinout 3s linear forwards;
+    animation: fadeinout 3s linear forwards;
+}
+
+.landing {
+	width: 60vw;
+	margin: 50vh auto;
+}
+
+#landing-text {
+	font-family: 'Anton', sans-serif;
+	font-size: 80px;
+	letter-spacing: 10px;
+	text-align: center;
+	margin: auto;
+	vertical-align: middle;
+}
+
+@-webkit-keyframes fadeinout {
+	0%,100% { opacity: 0; }
+	50% { opacity: 1; }
+}
+  
+@keyframes fadeinout {
+	0%,100% { opacity: 0; }
+	50% { opacity: 1; }
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Welcome to LD</title>
+	<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/landing.css') }}">
+
+</head>
+<body>
+	<div class=landing>
+		<h1 id=landing-text>Welcome to LD</h1>
+	</div>
+</body>
+<script>    
+    window.setTimeout(function(){
+
+      // Move to a new location or you can do something else
+      window.location.href = "{{ url_for('index') }}";
+
+      }, 4000);
+
+</script>
+</html>

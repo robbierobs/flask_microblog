@@ -69,7 +69,7 @@ class ResetPasswordForm(FlaskForm):
 
 # This was copied from the Microblog tutorial for further study
 class SearchForm(FlaskForm):
-    q = StringField(_l('Search'), validators=[DataRequired()])
+#    q = StringField(_l('Search'), validators=[DataRequired()])
 
     def __init__(self, *args, **kwargs):
         if 'formdata' not in kwargs:

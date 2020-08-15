@@ -20,6 +20,9 @@ def before_request():
 #    g.locale = str(get_locale())
 
 @app.route('/',  methods=['GET', 'POST'])
+def landing():
+    return render_template('landing.html')
+
 @app.route('/index', methods=['GET', 'POST'])
 # Requiring a user to be logged in before they can view the page!
 @login_required
@@ -188,6 +191,13 @@ def reset_password(token):
         return redirect(url_for('login'))
     return render_template('reset_password.html', form=form)
 
+@app.route('/portfolio/', methods=['GET'])
+def portfolio():
+    return render_template('portfolio.html', title='Portfolio')
+
+@app.route('/about/')
+def about_me():
+    return render_template('about.html', title='LD50 - About Me')
 #app.route('/search')
 #@login_required
 #def search():
